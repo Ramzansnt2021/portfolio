@@ -1,0 +1,165 @@
+/* Import files */
+@import url('https://fonts.cdnfonts.com/css/st-remona-neue');
+@import 'tailwindcss';
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-size: 16px;
+  font-style: normal;
+}
+
+/* Define variables */
+:root {
+  --st-remona-neue-font: 'ST Remona Neue', sans-serif;
+  --outfit-font: 'Outfit', sans-serif;
+  --spacing-padding-inline: 0.25rem; /*  min-width:640px ( 40rem )*/
+}
+
+@theme {
+  --color-primary: rgb(74, 73, 71);
+  --color-secondary: rgb(177, 116, 87);
+  --color-third: rgb(216, 210, 194);
+  --color-four: rgb(250, 247, 240);
+  --color-button-one: ;
+  --color-button-two: ;
+  --color-button-three: ;
+
+  /* BREAKPOINTS */
+  --breakpoint-*: initial;
+  --breakpoint-3xl: 100rem;
+  --breakpoint-2xl: 90rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-lg: 75rem;
+  --breakpoint-md: 64rem;
+  --breakpoint-sm: 55rem;
+  --breakpoint-xs: 35.438rem;
+}
+
+/* --- APPLY CUSTOM STYLES TO TAILWIND'S LAYERS --- */
+
+@layer utilities {
+  .container {
+    /* This applies your custom padding to the base .container class */
+    padding-inline: calc(
+      var(--spacing-padding-inline) * 0
+    ); /* Result: 2.5rem (40px) on each side */
+  }
+}
+/* Override or extend container styles */
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Responsive container max-widths */
+  @media (width < 100rem) {
+    .container {
+      max-width: 100% !important;
+    }
+  }
+  @media (width > 100rem) {
+    .container {
+      max-width: 1680px !important;
+    }
+  }
+}
+
+/* Global Tag elements styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--st-remona-neue-font);
+}
+div,
+p,
+a {
+  font-family: var(--outfit-font);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 1.9419rem + 0.9859vw, 3.125rem);
+}
+h2 {
+  font-size: clamp(2rem, 1.912rem + 0.2817vw, 2.25rem);
+}
+h3 {
+  font-size: clamp(1.625rem, 1.537rem + 0.2817vw, 1.875rem);
+}
+h4 {
+  font-size: clamp(1.25rem, 1.118rem + 0.4225vw, 1.625rem);
+}
+p {
+  font-size: clamp(1rem, 0.956rem + 0.1408vw, 1.125rem);
+}
+
+/* Header Section Styling Start */
+.mega-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover .mega-menu,
+.mega-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.mobile-menu.active {
+  max-height: 1000px;
+}
+
+@media (max-width: 1023px) {
+  .mega-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+  }
+
+  .mega-menu.active {
+    display: block;
+  }
+}
+/* Header Section Styling End */
+/* Responsiveness */
+@media screen and (width <= 112.5rem) {
+  .main-section-padding .container {
+    padding-inline: calc(var(--spacing-padding-inline) * 10);
+  }
+}
+@media screen and (width <= 40rem) {
+  .main-section-padding .container {
+    padding-inline: calc(var(--spacing-padding-inline) * 6);
+  }
+}

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="./output.css" />
+    <!-- Outfit Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- st-remona-neue -->
+    <link
+      href="https://fonts.cdnfonts.com/css/st-remona-neue"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Ramzan Raza - Portfolio</title>
+  </head>
+  <body>
+    <!-- Header Section Starts -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <div class="container mx-auto px-4">
+        <!-- Desktop Navigation -->
+        <nav class="flex items-center justify-between py-4">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="#" class="flex items-center">
+              <div
+                class="bg-blue-600 w-10 h-10 rounded-lg flex items-center justify-center"
+              >
+                <span class="text-white font-bold text-xl">B</span>
+              </div>
+              <span class="ml-2 text-xl font-bold text-gray-900 hidden sm:block"
+                >BrandName</span
+              >
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex items-center justify-center flex-1">
+            <ul class="flex space-x-1">
+              <li class="nav-item relative">
+                <a
+                  href="#"
+                  class="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-lg"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item relative">
+                <a
+                  href="#"
+                  class="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-lg"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item relative group">
+                <a
+                  href="#"
+                  class="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-lg flex items-center"
+                >
+                  Services
+                  <i class="fas fa-chevron-down ml-2 text-xs mt-0.5"></i>
+                </a>
+                <!-- Mega Menu -->
+                <div
+                  class="mega-menu absolute left-0 w-screen max-w-4xl mt-2 bg-white shadow-xl rounded-xl p-6 z-50"
+                >
+                  <div class="grid grid-cols-3 gap-8">
+                    <div>
+                      <h3 class="text-lg font-bold text-gray-900 mb-4">
+                        Design Services
+                      </h3>
+                      <ul class="space-y-3">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i
+                              class="fas fa-paint-brush mr-3 text-blue-500"
+                            ></i>
+                            UI/UX Design</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i class="fas fa-palette mr-3 text-blue-500"></i>
+                            Brand Identity</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i class="fas fa-desktop mr-3 text-blue-500"></i>
+                            Web Design</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i
+                              class="fas fa-mobile-alt mr-3 text-blue-500"
+                            ></i>
+                            App Design</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-bold text-gray-900 mb-4">
+                        Development
+                      </h3>
+                      <ul class="space-y-3">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i class="fas fa-code mr-3 text-blue-500"></i> Web
+                            Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i class="fab fa-android mr-3 text-blue-500"></i>
+                            Mobile Apps</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i
+                              class="fas fa-shopping-cart mr-3 text-blue-500"
+                            ></i>
+                            E-commerce</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i class="fas fa-cogs mr-3 text-blue-500"></i> API
+                            Integration</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-bold text-gray-900 mb-4">
+                        Digital Marketing
+                      </h3>
+                      <ul class="space-y-3">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i class="fas fa-search mr-3 text-blue-500"></i>
+                            SEO Optimization</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i class="fas fa-bullhorn mr-3 text-blue-500"></i>
+                            Social Media</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i class="fas fa-envelope mr-3 text-blue-500"></i>
+                            Email Marketing</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center"
+                            ><i
+                              class="fas fa-chart-line mr-3 text-blue-500"
+                            ></i>
+                            Analytics</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mt-8 pt-6 border-t border-gray-200">
+                    <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                      <div class="bg-blue-100 p-3 rounded-lg">
+                        <i class="fas fa-headset text-blue-600 text-2xl"></i>
+                      </div>
+                      <div class="ml-4">
+                        <h4 class="font-bold text-gray-900">
+                          Need help choosing the right service?
+                        </h4>
+                        <p class="text-gray-600 text-sm mt-1">
+                          Our experts are ready to help you find the perfect
+                          solution.
+                        </p>
+                      </div>
+                      <button
+                        class="ml-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                      >
+                        Get Advice
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item relative group">
+                <a
+                  href="#"
+                  class="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-lg flex items-center"
+                >
+                  Works
+                  <i class="fas fa-chevron-down ml-2 text-xs mt-0.5"></i>
+                </a>
+                <!-- Mega Menu -->
+                <div
+                  class="mega-menu absolute left-0 w-screen max-w-4xl mt-2 bg-white shadow-xl rounded-xl p-6 z-50"
+                >
+                  <div class="grid grid-cols-4 gap-8">
+                    <div class="col-span-1">
+                      <h3 class="text-lg font-bold text-gray-900 mb-4">
+                        Our Portfolio
+                      </h3>
+                      <p class="text-gray-600 mb-6">
+                        Explore our latest projects and success stories across
+                        various industries.
+                      </p>
+                      <a
+                        href="#"
+                        class="text-blue-600 font-medium flex items-center"
+                      >
+                        View all projects
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                      </a>
+                    </div>
+                    <div class="col-span-3">
+                      <div class="grid grid-cols-3 gap-4">
+                        <div class="bg-gray-100 rounded-lg p-4">
+                          <div
+                            class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mb-3"
+                          ></div>
+                          <h4 class="font-bold text-gray-900">
+                            E-commerce Solutions
+                          </h4>
+                          <p class="text-gray-600 text-sm mt-1">
+                            Online stores with seamless shopping experience
+                          </p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4">
+                          <div
+                            class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mb-3"
+                          ></div>
+                          <h4 class="font-bold text-gray-900">Mobile Apps</h4>
+                          <p class="text-gray-600 text-sm mt-1">
+                            iOS and Android applications for startups
+                          </p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4">
+                          <div
+                            class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mb-3"
+                          ></div>
+                          <h4 class="font-bold text-gray-900">
+                            Corporate Websites
+                          </h4>
+                          <p class="text-gray-600 text-sm mt-1">
+                            Professional websites for established businesses
+                          </p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4">
+                          <div
+                            class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mb-3"
+                          ></div>
+                          <h4 class="font-bold text-gray-900">
+                            SaaS Platforms
+                          </h4>
+                          <p class="text-gray-600 text-sm mt-1">
+                            Complex web applications for SaaS companies
+                          </p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4">
+                          <div
+                            class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mb-3"
+                          ></div>
+                          <h4 class="font-bold text-gray-900">
+                            Branding Projects
+                          </h4>
+                          <p class="text-gray-600 text-sm mt-1">
+                            Complete brand identity and guidelines
+                          </p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4">
+                          <div
+                            class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mb-3"
+                          ></div>
+                          <h4 class="font-bold text-gray-900">
+                            Marketing Campaigns
+                          </h4>
+                          <p class="text-gray-600 text-sm mt-1">
+                            Digital marketing success stories
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item relative group">
+                <a
+                  href="#"
+                  class="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium transition duration-300 rounded-lg flex items-center"
+                >
+                  Blogs
+                  <i class="fas fa-chevron-down ml-2 text-xs mt-0.5"></i>
+                </a>
+                <!-- Mega Menu -->
+                <div
+                  class="mega-menu absolute left-0 w-screen max-w-4xl mt-2 bg-white shadow-xl rounded-xl p-6 z-50"
+                >
+                  <div class="flex">
+                    <div class="w-1/3 pr-8">
+                      <h3 class="text-lg font-bold text-gray-900 mb-4">
+                        Categories
+                      </h3>
+                      <ul class="space-y-3">
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center justify-between"
+                          >
+                            <span>Design Trends</span>
+                            <span
+                              class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
+                              >24</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center justify-between"
+                          >
+                            <span>Development</span>
+                            <span
+                              class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
+                              >42</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center justify-between"
+                          >
+                            <span>Marketing</span>
+                            <span
+                              class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
+                              >18</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center justify-between"
+                          >
+                            <span>Business</span>
+                            <span
+                              class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
+                              >15</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-gray-700 hover:text-blue-600 flex items-center justify-between"
+                          >
+                            <span>Tutorials</span>
+                            <span
+                              class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
+                              >36</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+
+                      <div class="mt-8">
+                        <h4 class="font-bold text-gray-900 mb-3">
+                          Popular Tags
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                          <a
+                            href="#"
+                            class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-blue-100 hover:text-blue-700"
+                            >#WebDesign</a
+                          >
+                          <a
+                            href="#"
+                            class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-blue-100 hover:text-blue-700"
+                            >#JavaScript</a
+                          >
+                          <a
+                            href="#"
+                            class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-blue-100 hover:text-blue-700"
+                            >#SEO</a
+                          >
+                          <a
+                            href="#"
+                            class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-blue-100 hover:text-blue-700"
+                            >#Startup</a
+                          >
+                          <a
+                            href="#"
+                            class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-blue-100 hover:text-blue-700"
+                            >#UIUX</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-2/3 pl-8 border-l border-gray-200">
+                      <h3 class="text-lg font-bold text-gray-900 mb-4">
+                        Featured Posts
+                      </h3>
+                      <div class="grid grid-cols-2 gap-6">
+                        <div class="flex">
+                          <div
+                            class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 flex-shrink-0"
+                          ></div>
+                          <div class="ml-4">
+                            <a
+                              href="#"
+                              class="font-bold text-gray-900 hover:text-blue-600"
+                              >The Future of Responsive Design in 2024</a
+                            >
+                            <p class="text-gray-600 text-sm mt-1">
+                              5 min read • 245 views
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex">
+                          <div
+                            class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 flex-shrink-0"
+                          ></div>
+                          <div class="ml-4">
+                            <a
+                              href="#"
+                              class="font-bold text-gray-900 hover:text-blue-600"
+                              >Top JavaScript Frameworks to Learn This Year</a
+                            >
+                            <p class="text-gray-600 text-sm mt-1">
+                              8 min read • 512 views
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex">
+                          <div
+                            class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 flex-shrink-0"
+                          ></div>
+                          <div class="ml-4">
+                            <a
+                              href="#"
+                              class="font-bold text-gray-900 hover:text-blue-600"
+                              >How to Improve Your Website's SEO in 5 Steps</a
+                            >
+                            <p class="text-gray-600 text-sm mt-1">
+                              6 min read • 387 views
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex">
+                          <div
+                            class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 flex-shrink-0"
+                          ></div>
+                          <div class="ml-4">
+                            <a
+                              href="#"
+                              class="font-bold text-gray-900 hover:text-blue-600"
+                              >Building Scalable Apps with Modern
+                              Architecture</a
+                            >
+                            <p class="text-gray-600 text-sm mt-1">
+                              10 min read • 621 views
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="mt-6 pt-6 border-t border-gray-200 flex justify-between items-center"
+                      >
+                        <div>
+                          <h4 class="font-bold text-gray-900">
+                            Subscribe to our newsletter
+                          </h4>
+                          <p class="text-gray-600 text-sm mt-1">
+                            Get the latest posts delivered right to your inbox
+                          </p>
+                        </div>
+                        <button
+                          class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                        >
+                          Subscribe
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="hidden lg:block">
+            <button
+              class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300 transform hover:scale-105"
+            >
+              Let's Talk
+            </button>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-700 hover:text-blue-600 focus:outline-none"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu lg:hidden bg-white">
+          <ul class="pb-4">
+            <li class="border-b border-gray-200">
+              <a href="#" class="block py-3 px-4 text-gray-700 hover:bg-gray-50"
+                >Home</a
+              >
+            </li>
+            <li class="border-b border-gray-200">
+              <a href="#" class="block py-3 px-4 text-gray-700 hover:bg-gray-50"
+                >About Us</a
+              >
+            </li>
+            <li class="border-b border-gray-200">
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-700 hover:bg-gray-50 flex justify-between items-center"
+                onclick="toggleMobileSubmenu('services-menu')"
+              >
+                Services
+                <i class="fas fa-chevron-down text-xs"></i>
+              </a>
+              <div id="services-menu" class="mega-menu bg-gray-50 p-4 hidden">
+                <h3 class="font-bold text-gray-900 mb-3">Our Services</h3>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      ><i class="fas fa-paint-brush mr-2 text-blue-500"></i>
+                      UI/UX Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      ><i class="fas fa-code mr-2 text-blue-500"></i> Web
+                      Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      ><i class="fab fa-android mr-2 text-blue-500"></i> Mobile
+                      Apps</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      ><i class="fas fa-search mr-2 text-blue-500"></i> SEO
+                      Optimization</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-700 hover:bg-gray-50 flex justify-between items-center"
+                onclick="toggleMobileSubmenu('works-menu')"
+              >
+                Works
+                <i class="fas fa-chevron-down text-xs"></i>
+              </a>
+              <div id="works-menu" class="mega-menu bg-gray-50 p-4 hidden">
+                <h3 class="font-bold text-gray-900 mb-3">Our Works</h3>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      >E-commerce Solutions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      >Corporate Websites</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      >Mobile Applications</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      >Branding Projects</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="border-b border-gray-200">
+              <a
+                href="#"
+                class="block py-3 px-4 text-gray-700 hover:bg-gray-50 flex justify-between items-center"
+                onclick="toggleMobileSubmenu('blogs-menu')"
+              >
+                Blogs
+                <i class="fas fa-chevron-down text-xs"></i>
+              </a>
+              <div id="blogs-menu" class="mega-menu bg-gray-50 p-4 hidden">
+                <h3 class="font-bold text-gray-900 mb-3">Blog Categories</h3>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      >Design Trends</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      >Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      >Marketing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 text-gray-700 hover:text-blue-600"
+                      >Business</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-4 px-4">
+              <button
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition"
+              >
+                Let's Talk
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section Ends -->
+    <main>
+      <section class="main-section-padding banner-hero">
+        <div class="container mx-auto">
+          <div>
+            <h1 class="3xl:text-primary xl:text-secondary md:text-third">
+              Hello World
+            </h1>
+          </div>
+          <div></div>
+        </div>
+      </section>
+      <section class="banner-hero"></section>
+    </main>
+    <footer class="footer" id="footer"></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
